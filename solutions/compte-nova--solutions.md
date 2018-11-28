@@ -2,9 +2,13 @@
 
 ### 1. (Keypair) From demo account, generate a public keypair named **mypubkey1** for use with openstack instances   
 
-    nova keypair-add key1 > key1.pem  
-    chmod 600 key1.pem  
-    nova keypair-list
+    openstack keypair create mypubkey1 > mypubkey1.pem
+    chmod 600 mypubkey1.pem
+    openstack keypair list
+    
+    #nova keypair-add key1 > key1.pem  
+    #chmod 600 key1.pem  
+    #nova keypair-list
 
   
 
